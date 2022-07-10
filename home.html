@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <title>File Upload</title>
+  </head>
+  <body style="background-color:rgb(173, 210, 216);">
+    <h1 style="text-align:center;">GuoNFT</h1>
+
+    <form action="/" method="POST" enctype="multipart/form-data" style="text-align:center;">
+        {{ form.csrf_token }}
+        {{ form.image }}
+        <p style="text-align:center;">Recipient address <input type = "text" name = "recipient" /></p>
+        <button type="submit" style="text-align:center;">upload</button>
+    </form>
+  </body>
+</html>
